@@ -50,7 +50,7 @@ void app_main(void)
         printf("\n\n");
         adc_cali_raw_to_voltage(cali_handle, adc_read0, &mv_output);
         printf("ADC milivolt output %d \n", mv_output);
-        lux = 0.2258*adc_read0 - 338.57;
+        lux = 0.2258*adc_read0 - 338.57; //ยังไม่เสร็จ
         printf("Lux value = %f\n",lux);
         vTaskDelay(500/portTICK_PERIOD_MS);
 
